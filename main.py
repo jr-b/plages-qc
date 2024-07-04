@@ -34,7 +34,9 @@ def get_regions_ids(
 def get_table(url: str) -> pd.DataFrame:
     """Get the table from the url, assuming we want the first table from the webpage"""
     header = ["municipalite", "plagename", "plandeau", "cote", "dernierprelevement"]
-    tables = pd.read_html(url, skiprows=0)
+    tables = pd.read_html(url, skiprows=[0])
+    if len(tables) == 0:
+        raise ValueError("No table found")
     tables[0].columns = header
     return tables[0]
 
@@ -44,12 +46,15 @@ def main():
 
     for region in get_regions_ids():
         url = f"https://www.environnement.gouv.qc.ca/programmes/env-plage/liste_plage.asp?region={region[0]}"
-        table = get_table(url)
-        # add the region name and id to the table
-        table["regionid"] = region[0]
-        table["regionname"] = region[1]
-        alltables.append(table)
-
+        try:
+            table = get_table(url)
+            # add the region name and id to the table
+            table["regionid"] = region[0]
+            table["regionname"] = region[1]
+            alltables.append(table)
+        except ValueError:
+            print("No table found for region", region[1])
+            continue
     # Concatenate all the tables
     df = pd.concat(alltables)
     df.to_json("plages.json", orient="records", force_ascii=False)
