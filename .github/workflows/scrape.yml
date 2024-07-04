@@ -28,7 +28,7 @@ jobs:
 
       - name: Scrape data
         run: |
-          python3 scrape.py
+          python3 main.py
 
       - name: Install git
         run: sudo apt-get install git -y
