@@ -4,8 +4,7 @@ on:
   push:
 
 permissions:
-  id-token: write
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -30,36 +29,9 @@ jobs:
         run: |
           python3 main.py
 
-      - name: Install git
-        run: sudo apt-get install git -y
-
-      - name: Setup username
-        run: sudo git config --system user.name "scraperobot"
-
-      - name: Setup user email
-        run: sudo git config --system user.email "scraperobot@robot.com"
-
-      - name: Setup git auth
-        run: git remote set-url origin https://scraperobot:${{ secrets.GITHUB_TOKEN }}@github.com/jr-b/plages-qc.git
-
-      - name: Fetch
-        run: git fetch
-
-      - name: Checkout branch main
-        run: git checkout main
-
-      - name: Git add
-        run: git add -u
-
-      - name: Git add
-        run: git add plages.json
-
-      - name: Commit code
-        id: commitcode
-        run: git commit -a -m "Update data"
-        continue-on-error: true
-
-      - name: Push code
-        if: steps.commitcode.outcome == 'success'
-        run: git push
-        continue-on-error: true
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Scrape data"
+          branch: ${{ github.ref }}
+          commit_options: "--no-verify"
+          repository: ${{ github.repository }}
