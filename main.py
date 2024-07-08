@@ -56,14 +56,13 @@ def get_url_about_beach(searchstring: str) -> dict[str, str]:
     sleep_random()
     try:
         with DDGS(proxy="socks5://127.0.0.1:9150", timeout=20) as ddgs:
-            for r in ddgs.text(
+            return ddgs.text(
                 searchstring,
                 region="ca-fr",
                 safesearch="on",
                 max_results=1,
                 backend="html",
-            ):
-                return r
+            )
     except Exception as e:
         print(f"Error getting url: {e}")
         return {}
@@ -82,9 +81,10 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
                 layout="Wide",
                 size="Large",
                 safesearch="on",
-                max_results=1,
+                max_results=3,
             ):
-                return r
+                if requests.get(r["image"]).status_code == 200:
+                    return r
     except Exception as e:
         print(f"Error getting image: {e}")
         return {}
