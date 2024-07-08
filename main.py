@@ -4,6 +4,7 @@ import pandas as pd
 from duckduckgo_search import DDGS
 from time import sleep
 import random
+import os
 
 """
 Script pour récupérer les données concernant la qualité de l'eau des plages du Québec à partir du Programme Environnement-Plage
@@ -15,13 +16,16 @@ Le script récupère les données de toutes les plages de chaque région du Qué
 
 
 def sleep_random() -> None:
-    sleep(1 + 1 * random.random())
+    pass
+    # sleep(1 + 1 * random.random())
 
 
 def get_regions_ids(
     url: str = "https://www.environnement.gouv.qc.ca/programmes/env-plage/index.asp",
 ) -> list[tuple[str, str]]:
     """Get the regions ids and name from the main page"""
+    if not os.getenv("GITHUB_ACTIONS"):
+        return [("01", "Bas-Saint-Laurent")]
     response = requests.get(url)
     if not response.ok:
         response.raise_for_status()
@@ -38,13 +42,30 @@ def get_regions_ids(
         return []
 
 
-def get_table(url: str) -> pd.DataFrame:
-    """Get the table from the url, assuming we want the first table from the webpage"""
+def build_beach_table(url: str) -> pd.DataFrame:
+    """
+    Get the table from the url, assuming we want the first table from the webpage
+    Then add the remote content and image from DuckDuckGo
+    """
     header = ["municipalite", "plagename", "plandeau", "cote", "dernierprelevement"]
     tables = pd.read_html(url, skiprows=[0])
     if len(tables) == 0:
         raise ValueError("No table found")
     tables[0].columns = header
+    # get external data
+    count = len(tables[0])
+    for i, row in tables[0].iterrows():
+        print("Processing ", i, " of ", count)
+        searchstring = f"{row['plagename']} {row['plandeau']} {row['municipalite']}"
+        # Get the url of the first result
+        result = get_url_about_beach(searchstring)
+        if result:
+            tables[0].loc[i, "remotecontent"] = result["href"]
+        # Get the image of the first result
+        result = get_image_about_beach(searchstring)
+        if result:
+            tables[0].loc[i, "image"] = result["image"]
+
     return tables[0]
 
 
@@ -56,13 +77,14 @@ def get_url_about_beach(searchstring: str) -> dict[str, str]:
     sleep_random()
     try:
         with DDGS(proxy="socks5://127.0.0.1:9150", timeout=20) as ddgs:
-            return ddgs.text(
+            response = ddgs.text(
                 searchstring,
                 region="ca-fr",
                 safesearch="on",
                 max_results=1,
-                backend="html",
+                backend="lite",
             )
+            return response[0]
     except Exception as e:
         print(f"Error getting url: {e}")
         return {}
@@ -83,7 +105,12 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
                 safesearch="on",
                 max_results=3,
             ):
-                if requests.get(r["image"]).status_code == 200:
+                if (
+                    requests.get(
+                        r["image"], headers={"referer": "http://localhost:5173/"}
+                    ).status_code
+                    == 200
+                ):
                     return r
     except Exception as e:
         print(f"Error getting image: {e}")
@@ -97,7 +124,7 @@ def main():
         url = f"https://www.environnement.gouv.qc.ca/programmes/env-plage/liste_plage.asp?region={region[0]}"
         try:
             print("Processing region: ", region[1])
-            table = get_table(url)
+            table = build_beach_table(url)
             # add the region name and id to the table
             table["regionid"] = region[0]
             table["regionname"] = region[1]
@@ -106,20 +133,8 @@ def main():
             print("No table found for region: ", region[1])
             continue
     # Concatenate all the tables
-    df = pd.concat(alltables)
-    count = len(df)
+    df = pd.concat(alltables, ignore_index=True)
     df["id"] = df.index
-    for i, row in df.iterrows():
-        print("Processing ", i, " of ", count)
-        searchstring = f"{row['plagename']} {row['plandeau']} {row['municipalite']}"
-        # Get the url of the first result
-        result = get_url_about_beach(searchstring)
-        if result:
-            df.loc[i, "remotecontent"] = result["href"]
-        # Get the image of the first result
-        result = get_image_about_beach(searchstring)
-        if result:
-            df.loc[i, "image"] = result["image"]
 
     df.to_json("plages.json", orient="records", force_ascii=False)
 
