@@ -15,7 +15,7 @@ Le script récupère les données de toutes les plages de chaque région du Qué
 
 
 def sleep_random() -> None:
-    sleep(1 + 2 * random.random())
+    sleep(1 + 1 * random.random())
 
 
 def get_regions_ids(
@@ -61,6 +61,7 @@ def get_url_about_beach(searchstring: str) -> dict[str, str]:
                 region="ca-fr",
                 safesearch="on",
                 max_results=1,
+                backend="html",
             ):
                 return r
     except Exception as e:
@@ -78,6 +79,8 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
             for r in ddgs.images(
                 searchstring,
                 region="ca-fr",
+                layout="Wide",
+                size="Large",
                 safesearch="on",
                 max_results=1,
             ):
@@ -93,20 +96,22 @@ def main():
     for region in get_regions_ids():
         url = f"https://www.environnement.gouv.qc.ca/programmes/env-plage/liste_plage.asp?region={region[0]}"
         try:
+            print("Processing region: ", region[1])
             table = get_table(url)
             # add the region name and id to the table
             table["regionid"] = region[0]
             table["regionname"] = region[1]
             alltables.append(table)
         except ValueError:
-            print("No table found for region", region[1])
+            print("No table found for region: ", region[1])
             continue
     # Concatenate all the tables
     df = pd.concat(alltables)
     count = len(df)
+    df["id"] = df.index
     for i, row in df.iterrows():
-        print("Processing", i, "of", count)
-        searchstring = f"{row['plagename']} {row['municipalite']} Québec"
+        print("Processing ", i, " of ", count)
+        searchstring = f"{row['plagename']} {row['plandeau']} {row['municipalite']}"
         # Get the url of the first result
         result = get_url_about_beach(searchstring)
         if result:
