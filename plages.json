@@ -1,0 +1,1541 @@
+[
+    {
+        "municipalite": "Rouyn-Noranda",
+        "plagename": "Plage Kiwanis (Lac Noranda)",
+        "plandeau": "Lac Noranda",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "08",
+        "regionname": "Abitibi-Témiscamingue"
+    },
+    {
+        "municipalite": "Rouyn-Noranda",
+        "plagename": "Plage du Camp Joli - B",
+        "plandeau": "Lac Opasatica",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "08",
+        "regionname": "Abitibi-Témiscamingue"
+    },
+    {
+        "municipalite": "Trécesson",
+        "plagename": "Plage du Centre de plein air du lac Beauchamp",
+        "plandeau": "Lac Beauchamp",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "08",
+        "regionname": "Abitibi-Témiscamingue"
+    },
+    {
+        "municipalite": "Val-d'Or",
+        "plagename": "Plage municipale Rotary",
+        "plandeau": "Lac Blouin",
+        "cote": "B",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "08",
+        "regionname": "Abitibi-Témiscamingue"
+    },
+    {
+        "municipalite": "Ville-Marie",
+        "plagename": "Plage municipale de Ville-Marie",
+        "plandeau": "Lac Témiscamingue",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "08",
+        "regionname": "Abitibi-Témiscamingue"
+    },
+    {
+        "municipalite": "Auclair",
+        "plagename": "Plage municipale d'Auclair",
+        "plandeau": "Lac Squatec",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Dégelis",
+        "plagename": "Plage municipale de Dégelis",
+        "plandeau": "Lac Témiscouata",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Lac-Matapédia",
+        "plagename": "Plage du Camp Sable chaud",
+        "plandeau": "Lac Matapédia",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Matane",
+        "plagename": "Plage des Îles",
+        "plandeau": "Rivière Matane",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Packington",
+        "plagename": "Plage municipale Bon Aire",
+        "plandeau": "Lac Jerry",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Pohénégamook",
+        "plagename": "Camping plage Pohénégamook",
+        "plandeau": "Lac Pohénégamook",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Saint-Alexandre-de-Kamouraska",
+        "plagename": "Plage du Camp musical St-Alexandre",
+        "plandeau": "Rivière Fourchue",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Témiscouata-sur-le-Lac",
+        "plagename": "Plage municipale de Cabano",
+        "plandeau": "Lac Témiscouata",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Témiscouata-sur-le-Lac",
+        "plagename": "Plage municipale de Notre-Dame-du-Lac",
+        "plandeau": "Lac Témiscouata",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "01",
+        "regionname": "Bas-Saint-Laurent"
+    },
+    {
+        "municipalite": "Baie-Saint-Paul",
+        "plagename": "Plage du Camping Le Genévrier",
+        "plandeau": "Lac artificiel",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Fossambault-sur-le-Lac",
+        "plagename": "Plage Lac Saint-Joseph",
+        "plandeau": "Lac Saint-Joseph",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Fossambault-sur-le-Lac",
+        "plagename": "Plage du Club Nautique Lac Saint-Joseph",
+        "plandeau": "Lac Saint-Joseph",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Fossambault-sur-le-Lac",
+        "plagename": "Plage municipale de Fossambault",
+        "plandeau": "Lac Saint-Joseph",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Lac-Beauport",
+        "plagename": "Plage du Club Nautique Lac Beauport",
+        "plandeau": "Lac Beauport",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Lac-Saint-Joseph",
+        "plagename": "Plage du Club nautique Saint-Louis",
+        "plandeau": "Lac Saint-Joseph",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Lac-Sergent",
+        "plagename": "Plage du Club nautique du Lac Sergent",
+        "plandeau": "Lac Sergent",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Saint-Aimé-des-Lacs",
+        "plagename": "Plage de la Base de plein air du lac Nairne",
+        "plandeau": "Lac Nairne",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Saint-Alban",
+        "plagename": "Plage du Camp de Vacances Kéno",
+        "plandeau": "Lac Long",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Saint-Ferréol-les-Neiges",
+        "plagename": "Plage du Camping du Mont Sainte-Anne",
+        "plandeau": "Lac artificiel",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Saint-Léonard-de-Portneuf",
+        "plagename": "Plage Eau Claire",
+        "plandeau": "Lac Simon",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Saint-Raymond",
+        "plagename": "Plage du Camp de Portneuf",
+        "plandeau": "Lac Sept-Îles",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "03",
+        "regionname": "Capitale-Nationale"
+    },
+    {
+        "municipalite": "Princeville",
+        "plagename": "Cristal Princeville",
+        "plandeau": "Lac artificiel",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "17",
+        "regionname": "Centre-du-Québec"
+    },
+    {
+        "municipalite": "Saint-Félix-de-Kingsey",
+        "plagename": "Gestion Favre & Genest inc. (Camping Lac aux Bouleaux)",
+        "plandeau": "Lac aux Bouleaux",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "17",
+        "regionname": "Centre-du-Québec"
+    },
+    {
+        "municipalite": "Saint-Rosaire",
+        "plagename": "Domaine du Lac Cristal",
+        "plandeau": "Lac Cristal",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "17",
+        "regionname": "Centre-du-Québec"
+    },
+    {
+        "municipalite": "Saints-Martyrs-Canadiens",
+        "plagename": "Plage du Camp Beauséjour",
+        "plandeau": "Lac Sunday",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "17",
+        "regionname": "Centre-du-Québec"
+    },
+    {
+        "municipalite": "Adstock",
+        "plagename": "Plage du secteur St-Daniel",
+        "plandeau": "Lac Saint-François",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Lac-Etchemin",
+        "plagename": "Plage Corporation Eco-Parc des Etchemins",
+        "plandeau": "Lac Etchemin",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Saint-Aubert",
+        "plagename": "Camp Trois-Saumons (Plage le Goéland)",
+        "plandeau": "Lac Trois-Saumons",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Saint-Aubert",
+        "plagename": "Camp Trois-Saumons (Plage le Rendez-Vous)",
+        "plandeau": "Lac Trois-Saumons",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Saint-Aubert",
+        "plagename": "Camp Trois-Saumons (Plage la Nageoire)",
+        "plandeau": "Lac Trois-Saumons",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Sainte-Apolline-de-Patton",
+        "plagename": "Plage centre de plein air Sainte-Apolline",
+        "plandeau": "Lac Carré",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/05",
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Sainte-Aurélie",
+        "plagename": "Plage camping Sainte-Aurélie",
+        "plandeau": "Lac des Abénaquis",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Saint-Sylvestre",
+        "plagename": "Domaine du Radar",
+        "plandeau": "Lac du Radar",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Saint-Victor",
+        "plagename": "Plage du Lac Fortin",
+        "plandeau": "Lac Fortin",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "12",
+        "regionname": "Chaudière-Appalaches"
+    },
+    {
+        "municipalite": "Fermont",
+        "plagename": "Plage du lac Daviault",
+        "plandeau": "Lac Daviault",
+        "cote": 1,
+        "dernierprelevement": null,
+        "regionid": "09",
+        "regionname": "Côte-Nord"
+    },
+    {
+        "municipalite": "Sept-Îles",
+        "plagename": "Centre de plein air du Lac Des Rapides",
+        "plandeau": "Lac des Rapides",
+        "cote": 1,
+        "dernierprelevement": null,
+        "regionid": "09",
+        "regionname": "Côte-Nord"
+    },
+    {
+        "municipalite": "Ayer's Cliff",
+        "plagename": "Plage du camping du lac Massawippi",
+        "plandeau": "Lac Massawippi",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/18",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Ayer's Cliff",
+        "plagename": "Plage du camp Massawippi",
+        "plandeau": "Lac Massawippi",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Ayer's Cliff",
+        "plagename": "Plage Massawippi",
+        "plandeau": "Lac Massawippi",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Bromont",
+        "plagename": "Plage municipale du lac Bromont",
+        "plandeau": "Lac Bromont",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/28",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Bromont",
+        "plagename": "Plage du camping des sommets Bromont",
+        "plandeau": "Lac artificiel",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Bromont",
+        "plagename": "Domaine Naturel du lac Gale",
+        "plandeau": "Lac Gale",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Cleveland",
+        "plagename": "Plage du camp d'Action Biblique",
+        "plandeau": "Ruisseau Smith",
+        "cote": "B",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Coaticook",
+        "plagename": "Plage de Baldwin, lac Lyster",
+        "plandeau": "Lac Lyster",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/17",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Dudswell",
+        "plagename": "Plage Pierre-E. Perreault",
+        "plandeau": "Lac d'Argent",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Frontenac",
+        "plagename": "Plage du lac aux Araignées",
+        "plandeau": "Lac aux Araignées",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Hatley",
+        "plagename": "Plage Québec Lodge",
+        "plandeau": "Lac Massawippi",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/18",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Lac-Brome",
+        "plagename": "Plage municipale du lac Brome (Douglass)",
+        "plandeau": "Lac Brome",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Lambton",
+        "plagename": "Plage du parc du grand lac St-François",
+        "plandeau": "Lac Saint-François",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Magog",
+        "plagename": "Plage Wilvaken Inc.",
+        "plandeau": "Lac Lovering",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "North Hatley",
+        "plagename": "Plage Pleasant View de North Hatley",
+        "plandeau": "Lac Massawippi",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/18",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Orford",
+        "plagename": "Plage du centre de villégiature Jouvence",
+        "plandeau": "Lac Stukely",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Orford",
+        "plagename": "Plage du lac Fraser",
+        "plandeau": "Lac Fraser",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Orford",
+        "plagename": "Parkside Ranch inc.",
+        "plandeau": "Lac artificiel",
+        "cote": "C",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Orford",
+        "plagename": "Plage du lac Stukely",
+        "plandeau": "Lac Stukely",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Piopolis",
+        "plagename": "Plage municipale de Piopolis",
+        "plandeau": "Lac Mégantic",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Potton",
+        "plagename": "Plage Vale Perkins",
+        "plandeau": "Lac Memphrémagog",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Roxton Pond",
+        "plagename": "Plage du Parc de la Yamaska",
+        "plandeau": "Réservoir Choinière",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Saint-Herménégilde",
+        "plagename": "Plage municipale de Saint-Herménégilde",
+        "plandeau": "Lac Wallace",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Saint-Herménégilde",
+        "plagename": "Plage Frontier Lodge",
+        "plandeau": "Lac Wallace",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Stanstead",
+        "plagename": "Plage du camp Livingstone",
+        "plandeau": "Lac Lovering",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/17",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Stratford",
+        "plagename": "Plage du camp Claret",
+        "plandeau": "Lac Elgin",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "05",
+        "regionname": "Estrie"
+    },
+    {
+        "municipalite": "Chandler",
+        "plagename": "Plage de la base plein air Bellefeuille",
+        "plandeau": "Lac Chaud",
+        "cote": 1,
+        "dernierprelevement": null,
+        "regionid": "11",
+        "regionname": "Gaspésie−Îles-de-la-Madeleine"
+    },
+    {
+        "municipalite": "Chertsey",
+        "plagename": "Plage du camp Saint-Urbain",
+        "plandeau": "Lac Hersey",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Entrelacs",
+        "plagename": "Plage municipale d'Entrelacs",
+        "plandeau": "Lac des Îles",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Notre-Dame-de-la-Merci",
+        "plagename": "Plage du camp Ouareau",
+        "plandeau": "Lac Ouareau",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Rawdon",
+        "plagename": "Plage du camp Mariste Morgan",
+        "plandeau": "Lac Morgan",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Rawdon",
+        "plagename": "Plage municipale de Rawdon",
+        "plandeau": "Lac Rawdon",
+        "cote": "C",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Rawdon",
+        "plagename": "Plage du camping Québécamp",
+        "plandeau": "Lac artificiel",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Alphonse-Rodriguez",
+        "plagename": "Plage des campeurs du camp Papillon",
+        "plandeau": "Lac Pierre",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Alphonse-Rodriguez",
+        "plagename": "Plage des moniteurs du camp Papillon",
+        "plandeau": "Lac Pierre",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Alphonse-Rodriguez",
+        "plagename": "Plage municipale du Lac Pierre #1",
+        "plandeau": "Lac Pierre",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Alphonse-Rodriguez",
+        "plagename": "Plage du camp l'Étincelle",
+        "plandeau": "Lac Long Sud",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Alphonse-Rodriguez",
+        "plagename": "Plage du camp de la Salle",
+        "plandeau": "Lac Rouge",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Charles-Borromée",
+        "plagename": "Plage St-Jean Bosco",
+        "plandeau": "Rivière l'Assomption",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Côme",
+        "plagename": "Plage de Plein air Lanaudia",
+        "plandeau": "Lac des Baies",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Donat",
+        "plagename": "Plage municipale de Saint-Donat",
+        "plandeau": "Lac Archambeault",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Donat",
+        "plagename": "Plage du camp Mère Clarac",
+        "plandeau": "Rivière Ouareau",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Sainte-Béatrix",
+        "plagename": "Camp Musical Père Lindsay",
+        "plandeau": "Lac Priscault",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Sainte-Béatrix",
+        "plagename": "Plage du Havre Familial",
+        "plandeau": "Lac Claire",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Sainte-Marcelline-de-Kildare",
+        "plagename": "Plage municipale de Sainte-Marcelline-de-Kildare",
+        "plandeau": "Lac des Français",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Félix-de-Valois",
+        "plagename": "Plage du camping Globe Trotter Enr.",
+        "plandeau": "Lac artificiel",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Gabriel",
+        "plagename": "Plage du Manoir du lac",
+        "plandeau": "Lac Maskinongé",
+        "cote": "B",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Gabriel",
+        "plagename": "Plage municipale de Saint-Gabriel",
+        "plandeau": "Lac Maskinongé",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Saint-Michel-des-Saints",
+        "plagename": "Plage municipale de Saint-Michel-des-Saints",
+        "plandeau": "Réservoir Lac Taureau",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "14",
+        "regionname": "Lanaudière"
+    },
+    {
+        "municipalite": "Arundel",
+        "plagename": "Plage du camp Les Débrouillards",
+        "plandeau": "Ruisseau Long",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Brownsburg-Chatham",
+        "plagename": "Plage du camping Chatham",
+        "plandeau": "Rivière des Outaouais",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Ferme-Neuve",
+        "plagename": "Plage du camping Baie-du-Diable",
+        "plandeau": "Réservoir Baskatong",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Grenville-sur-la-Rouge",
+        "plagename": "Plage du camp Amy Molson #1",
+        "plandeau": "Lac McGillivray",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Grenville-sur-la-Rouge",
+        "plagename": "Plage du centre Notre-Dame-de-la-Rouge",
+        "plandeau": "Rivière des Outaouais",
+        "cote": "C",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Harrington",
+        "plagename": "Plage du camp musical Cammac",
+        "plandeau": "Lac McDonald",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Labelle",
+        "plagename": "Plage du camp Caritas",
+        "plandeau": "Lac Labelle",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Lac-Saguay",
+        "plagename": "Plage du lac Saguay",
+        "plandeau": "Lac Saguay",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Lac-Supérieur",
+        "plagename": "Plage de l'auberge Le P'tit Bonheur",
+        "plandeau": "Lac Quenouille",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Lantier",
+        "plagename": "Plage senior citizen du camp B'Nai Brith",
+        "plandeau": "Lac Ludger",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Mont-Blanc",
+        "plagename": "Plage municipale du lac Carré",
+        "plandeau": "Lac Carré",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Mont-Laurier",
+        "plagename": "Plage municipale du lac des Sources",
+        "plandeau": "Lac-des-Sources",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Mont-Tremblant",
+        "plagename": "Plage du camp Kinneret Biluim",
+        "plandeau": "Lac Mercier",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Mont-Tremblant",
+        "plagename": "Plage du club plage et tennis",
+        "plandeau": "Lac Tremblant",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Mont-Tremblant",
+        "plagename": "Plage du lac Mercier",
+        "plandeau": "Lac Mercier",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Nominingue",
+        "plagename": "Plage municipale du lac Nominingue",
+        "plandeau": "Lac Nominingue",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Nominingue",
+        "plagename": "Plage junior du camp Nominingue",
+        "plandeau": "Petit Lac Nominingue",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Nominingue",
+        "plagename": "Plage Senior du camp Nominingue",
+        "plandeau": "Petit Lac Nominingue",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Oka",
+        "plagename": "Plage du parc d'Oka secteur Est",
+        "plandeau": "Lac des Deux-Montagnes",
+        "cote": "C",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Oka",
+        "plagename": "Plage du parc d'Oka Secteur Ouest",
+        "plandeau": "Lac des Deux-Montagnes",
+        "cote": "C",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Pointe-Calumet",
+        "plagename": "Plage du camping l'Escale",
+        "plandeau": "Lac artificiel",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Saint-Adolphe-d'Howard",
+        "plagename": "Plage du camp Wingate",
+        "plandeau": "Lac-des-Trois-Frères",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Saint-Adolphe-d'Howard",
+        "plagename": "Plage du camp Kinkora",
+        "plandeau": "Lac la Borne",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Adèle",
+        "plagename": "Plage municipale Jean-Guy Caron",
+        "plandeau": "Lac Rond",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Agathe-des-Monts",
+        "plagename": "Plage du camp Carowanis",
+        "plandeau": "Lac Didi",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Agathe-des-Monts",
+        "plagename": "Plage Major",
+        "plandeau": "Lac des Sables",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Agathe-des-Monts",
+        "plagename": "Plage Tessier",
+        "plandeau": "Lac des Sables",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Anne-des-Lacs",
+        "plagename": "Plage du camp de jour Magico-Parc",
+        "plandeau": "Lac Loiselle",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Anne-des-Lacs",
+        "plagename": "Plage du camp Olier",
+        "plandeau": "Lac artificiel",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Anne-des-Lacs",
+        "plagename": "Plage des Clercs Saint-Viateur du Canada",
+        "plandeau": "Lac Ouimet",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Sainte-Marguerite-du-Lac-Masson",
+        "plagename": "Plage municipale du lac Masson",
+        "plandeau": "Lac Masson",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Saint-Hippolyte",
+        "plagename": "Plage du camp Weredale",
+        "plandeau": "Lac l'Achigan",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Saint-Hippolyte",
+        "plagename": "Plage du camp de santé Bruchési #1",
+        "plandeau": "Lac l'Achigan",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Saint-Hippolyte",
+        "plagename": "Plage Municipale de Saint-Hippolyte 2",
+        "plandeau": "Lac l'Achigan",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Saint-Sauveur",
+        "plagename": "Plage du camp Kanawana YMCA",
+        "plandeau": "Lac Kanawana",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Val-Morin",
+        "plagename": "Plage du lac Raymond",
+        "plandeau": "Lac Raymond",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Wentworth-Nord",
+        "plagename": "Plage municipalité de Wentworth-Nord",
+        "plandeau": "Lac Laurel",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Wentworth-Nord",
+        "plagename": "Plage de la Base de plein air Bon depart",
+        "plandeau": "Lac des Feuilles",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Wentworth-Nord",
+        "plagename": "Plage du camp Péniel",
+        "plandeau": "lac Théodore",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "15",
+        "regionname": "Laurentides"
+    },
+    {
+        "municipalite": "Lac-aux-Sables",
+        "plagename": "Plage Lac-en-Coeur",
+        "plandeau": "Lac en Coeur",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/17",
+        "regionid": "04",
+        "regionname": "Mauricie"
+    },
+    {
+        "municipalite": "Notre-Dame-du-Mont-Carmel",
+        "plagename": "Villa du Carmel",
+        "plandeau": "Lac Artificiel",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/18",
+        "regionid": "04",
+        "regionname": "Mauricie"
+    },
+    {
+        "municipalite": "Saint-Élie-de-Caxton",
+        "plagename": "Floribell station touristique",
+        "plandeau": "Lac Bell",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/18",
+        "regionid": "04",
+        "regionname": "Mauricie"
+    },
+    {
+        "municipalite": "Sainte-Thècle",
+        "plagename": "Plage Sainte-Thècle",
+        "plandeau": "Lac Croche",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/17",
+        "regionid": "04",
+        "regionname": "Mauricie"
+    },
+    {
+        "municipalite": "Shawinigan",
+        "plagename": "Plage no.1 Camp Minogami",
+        "plandeau": "Lac Minogami",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/18",
+        "regionid": "04",
+        "regionname": "Mauricie"
+    },
+    {
+        "municipalite": "Shawinigan",
+        "plagename": "Camping et plage Baie Martin",
+        "plandeau": "Lac des Piles",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/17",
+        "regionid": "04",
+        "regionname": "Mauricie"
+    },
+    {
+        "municipalite": "Saint-Anicet",
+        "plagename": "Plage du parc Jules-Léger",
+        "plandeau": "Lac Saint-François",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "16",
+        "regionname": "Montérégie"
+    },
+    {
+        "municipalite": "Saint-Charles-sur-Richelieu",
+        "plagename": "Plage du Camping Ô 4 Îles",
+        "plandeau": "Lac des Sables",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "16",
+        "regionname": "Montérégie"
+    },
+    {
+        "municipalite": "Saint-Cyprien-de-Napierville",
+        "plagename": "Plage Domaine des Arpents verts",
+        "plandeau": "Lac artificiel",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/19",
+        "regionid": "16",
+        "regionname": "Montérégie"
+    },
+    {
+        "municipalite": "Saint-Liboire",
+        "plagename": "Plage du camping Laliberté",
+        "plandeau": "Lac artificiel",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/18",
+        "regionid": "16",
+        "regionname": "Montérégie"
+    },
+    {
+        "municipalite": "Saint-Paul-de-l'Île-aux-Noix",
+        "plagename": "Plage du centre de plein air l'Estacade",
+        "plandeau": "Rivière Richelieu",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/26",
+        "regionid": "16",
+        "regionname": "Montérégie"
+    },
+    {
+        "municipalite": "Montréal",
+        "plagename": "Plage du parc-nature du Bois-de-l'Île-Bizard",
+        "plandeau": "Lac des Deux-Montagnes",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "06",
+        "regionname": "Montréal"
+    },
+    {
+        "municipalite": "Montréal",
+        "plagename": "Plage du parc-nature du Cap-Saint-Jacques #1 \/ Accès public en général",
+        "plandeau": "Lac des Deux-Montagnes",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "06",
+        "regionname": "Montréal"
+    },
+    {
+        "municipalite": "Montréal",
+        "plagename": "Plage du parc-nature du Cap-Saint-Jacques #2 \/ Accès clientèle de la base de plein air",
+        "plandeau": "Lac des Deux-Montagnes",
+        "cote": "B",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "06",
+        "regionname": "Montréal"
+    },
+    {
+        "municipalite": "Montréal",
+        "plagename": "Plage du Parc Jean-Drapeau",
+        "plandeau": "Lac de l'Île Notre-Dame",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "06",
+        "regionname": "Montréal"
+    },
+    {
+        "municipalite": "Bowman",
+        "plagename": "La base de plein air Air-Eau-Bois inc.",
+        "plandeau": "Lac du Poisson Blanc",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Duhamel",
+        "plagename": "Plage du centre touristique du Lac Simon",
+        "plandeau": "Lac Simon",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Gracefield",
+        "plagename": "Plage du camp et centre de conférence de Gracefield",
+        "plandeau": "Lac du Castor Blanc",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Grand-Remous",
+        "plagename": "Plage du camp des Bouleaux",
+        "plandeau": "Lac Grier",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Lac-Simon",
+        "plagename": "Plage municipale de Lac-Simon",
+        "plandeau": "Lac Simon",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Otter Lake",
+        "plagename": "Plage du centre touristique du lac Leslie",
+        "plandeau": "Lac Leslie",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Pontiac",
+        "plagename": "Plage Aquafolie, Camp des Voyageurs Tim Horton",
+        "plandeau": "Rivière des Outaouais",
+        "cote": "D",
+        "dernierprelevement": "2024\/07\/03",
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Saint-Émile-de-Suffolk",
+        "plagename": "Plage du Camp Ozanam",
+        "plandeau": "Lac des Plages",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Val-des-Monts",
+        "plagename": "Plage municipale du lac Saint-Pierre",
+        "plandeau": "Lac Saint-Pierre",
+        "cote": "C",
+        "dernierprelevement": "2024\/06\/27",
+        "regionid": "07",
+        "regionname": "Outaouais"
+    },
+    {
+        "municipalite": "Alma",
+        "plagename": "Camping Alma (Colonie Notre-Dame Inc)",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Alma",
+        "plagename": "Centre de villégiature Dam-en-Terre",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Chambord",
+        "plagename": "Camping-Plage Blanchet",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Dolbeau-Mistassini",
+        "plagename": "Vauvert-sur-le-Lac-Saint-Jean",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Dolbeau-Mistassini",
+        "plagename": "Plage municipale de Dolbeau",
+        "plandeau": "Rivière Mistassini",
+        "cote": "B",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "L'Ascension-de-Notre-Seigneur",
+        "plagename": "Camp Patmos",
+        "plandeau": "Lac Poisson",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Métabetchouan--Lac-à-la-Croix",
+        "plagename": "Camping La Villa des Sables",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Métabetchouan--Lac-à-la-Croix",
+        "plagename": "Centre récréotouristique le Rigolet",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Roberval",
+        "plagename": "Plage municipale de la Pointe Scott",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saguenay",
+        "plagename": "Centre du Lac Pouce",
+        "plandeau": "Lac Pouce",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saguenay",
+        "plagename": "Camping Jonquière",
+        "plandeau": "Lac kénogami",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saguenay",
+        "plagename": "Centre Kéno-Patro",
+        "plandeau": "Lac Kénogami",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saint-David-de-Falardeau",
+        "plagename": "Camp Brochet",
+        "plandeau": "Lac Brochet",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saint-Gédéon",
+        "plagename": "Plage municipale de Saint-Gédéon",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saint-Gédéon",
+        "plagename": "Camping d'Hébertville-Station",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saint-Henri-de-Taillon",
+        "plagename": "Camping Belley",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "1",
+        "dernierprelevement": null,
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saint-Ludger-de-Milot",
+        "plagename": "Plage municipale de Saint-Ludger-de-Milot",
+        "plandeau": "Lac Serein",
+        "cote": "A",
+        "dernierprelevement": "2024\/07\/02",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    },
+    {
+        "municipalite": "Saint-Prime",
+        "plagename": "Plage municipale de Saint-Prime",
+        "plandeau": "Lac Saint-Jean",
+        "cote": "A",
+        "dernierprelevement": "2024\/06\/25",
+        "regionid": "02",
+        "regionname": "Saguenay−Lac-Saint-Jean"
+    }
+]
