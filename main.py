@@ -141,6 +141,7 @@ def main():
     df.to_json("plages.json", orient="records", force_ascii=False)
 
     # write to google sheets
+    df = df.fillna("")
     write_to_google_sheets(df, "plagesquebec")
 
 
