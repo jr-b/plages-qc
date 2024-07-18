@@ -5,6 +5,7 @@ from duckduckgo_search import DDGS
 from time import sleep
 import random
 import os
+from sheets import write_to_google_sheets
 
 """
 Script pour récupérer les données concernant la qualité de l'eau des plages du Québec à partir du Programme Environnement-Plage
@@ -136,7 +137,11 @@ def main():
     df = pd.concat(alltables, ignore_index=True)
     df["id"] = df.index
 
+    # write to json
     df.to_json("plages.json", orient="records", force_ascii=False)
+
+    # write to google sheets
+    write_to_google_sheets(df, "plagesquebec")
 
 
 if __name__ == "__main__":
