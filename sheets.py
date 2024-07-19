@@ -7,8 +7,7 @@ import base64
 def write_to_google_sheets(dataframe: pd.DataFrame, sheet_name: str) -> None:
     """Write the dataframe to the google sheets"""
     # read secrets base64 encoded string
-    creds = os.getenv("GSHEETS")
-    if creds:
+    if (creds := os.getenv("GSHEETS")) is not None:
         decoded_creds = base64.b64decode(creds).decode("utf-8")
         with open("plagesquebec.json", "w") as f:
             f.write(decoded_creds)
