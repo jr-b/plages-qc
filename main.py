@@ -77,7 +77,7 @@ def get_url_about_beach(searchstring: str) -> dict[str, str]:
     """
     sleep_random()
     try:
-        with DDGS(proxy="socks5://127.0.0.1:9150", timeout=20) as ddgs:
+        with DDGS(proxy="socks5://127.0.0.1:9150", timeout=10) as ddgs:
             response = ddgs.text(
                 searchstring,
                 region="ca-fr",
@@ -97,14 +97,14 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
     """
     sleep_random()
     try:
-        with DDGS(proxy="socks5://127.0.0.1:9150", timeout=20) as ddgs:
+        with DDGS(proxy="socks5://127.0.0.1:9150", timeout=10) as ddgs:
             for r in ddgs.images(
                 searchstring,
                 region="ca-fr",
                 layout="Wide",
                 size="Large",
                 safesearch="on",
-                max_results=3,
+                max_results=5,
             ):
                 if (
                     requests.get(
@@ -113,6 +113,8 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
                     == 200
                 ):
                     return r
+                else:
+                    print("Image not found" + r["image"])
     except Exception as e:
         print(f"Error getting image: {e}")
         return {}
