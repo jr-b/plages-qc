@@ -2,6 +2,9 @@ name: scrape data
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 */3 * * *" # every 3 hours
+  push:
 
 permissions:
   contents: write
@@ -30,7 +33,5 @@ jobs:
       - name: Scrape data
         run: |
           python3 main.py
-        env:
-          GSHEETS: ${{ secrets.GSHEETS }}
 
       - uses: stefanzweifel/git-auto-commit-action@v5

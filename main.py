@@ -2,9 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 from duckduckgo_search import DDGS
-from time import sleep
-import random
 import os
+from tinydb import TinyDB, Query
 from sheets import write_to_google_sheets
 
 """
@@ -16,17 +15,14 @@ Le script récupère les données de toutes les plages de chaque région du Qué
 """
 
 
-def sleep_random() -> None:
-    pass
-    # sleep(1 + 1 * random.random())
-
-
 def get_regions_ids(
     url: str = "https://www.environnement.gouv.qc.ca/programmes/env-plage/index.asp",
 ) -> list[tuple[str, str]]:
     """Get the regions ids and name from the main page"""
+
     if not os.getenv("GITHUB_ACTIONS"):
         return [("01", "Bas-Saint-Laurent")]
+
     response = requests.get(url)
     if not response.ok:
         response.raise_for_status()
@@ -43,7 +39,7 @@ def get_regions_ids(
         return []
 
 
-def build_beach_table(url: str) -> pd.DataFrame:
+def build_beach_table(url: str, get_external_data_flag: bool = False) -> pd.DataFrame:
     """
     Get the table from the url, assuming we want the first table from the webpage
     Then add the remote content and image from DuckDuckGo
@@ -53,19 +49,21 @@ def build_beach_table(url: str) -> pd.DataFrame:
     if len(tables) == 0:
         raise ValueError("No table found")
     tables[0].columns = header
+
     # get external data
-    count = len(tables[0])
-    for i, row in tables[0].iterrows():
-        print("Processing ", i, " of ", count)
-        searchstring = f"{row['plagename']} {row['plandeau']} {row['municipalite']}"
-        # Get the url of the first result
-        result = get_url_about_beach(searchstring)
-        if result:
-            tables[0].loc[i, "remotecontent"] = result["href"]
-        # Get the image of the first result
-        result = get_image_about_beach(searchstring)
-        if result:
-            tables[0].loc[i, "image"] = result["image"]
+    if get_external_data_flag:
+        count = len(tables[0])
+        for i, row in tables[0].iterrows():
+            print("Processing ", i, " of ", count)
+            searchstring = f"{row['plagename']} {row['plandeau']} {row['municipalite']}"
+            # Get the url of the first result
+            result = get_url_about_beach(searchstring)
+            if result:
+                tables[0].loc[i, "remotecontent"] = result["href"]
+            # Get the image of the first result
+            result = get_image_about_beach(searchstring)
+            if result:
+                tables[0].loc[i, "image"] = result["image"]
 
     return tables[0]
 
@@ -75,7 +73,6 @@ def get_url_about_beach(searchstring: str) -> dict[str, str]:
     Query DuckDuckGo for the first result about the beach
     Returns a dictionary with the url of the first result, the title of the page and its description
     """
-    sleep_random()
     try:
         with DDGS(proxy="socks5://127.0.0.1:9150", timeout=10) as ddgs:
             response = ddgs.text(
@@ -95,7 +92,6 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
     """
     Query DuckDuckGo for the first image about the beach
     """
-    sleep_random()
     try:
         with DDGS(proxy="socks5://127.0.0.1:9150", timeout=10) as ddgs:
             for r in ddgs.images(
@@ -120,9 +116,11 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
         return {}
 
 
-def main():
+def scrape_data() -> list[pd.DataFrame]:
+    """
+    Scrape the table for each region and return a list of all the tables
+    """
     alltables = []
-
     for region in get_regions_ids():
         url = f"https://www.environnement.gouv.qc.ca/programmes/env-plage/liste_plage.asp?region={region[0]}"
         try:
@@ -135,16 +133,48 @@ def main():
         except ValueError:
             print("No table found for region: ", region[1])
             continue
+    return alltables
+
+
+def main():
+    # Get all the tables
+    alltables = scrape_data()
     # Concatenate all the tables
-    df = pd.concat(alltables, ignore_index=True)
-    df["id"] = df.index
+    new_df = pd.concat(alltables, ignore_index=True)
+    # Replace NaN with empty string
+    new_df = new_df.fillna("")
 
-    # write to json
-    df.to_json("plages.json", orient="records", force_ascii=False)
+    db = TinyDB("beaches_db.json", ensure_ascii=False)
+    # Update the database with the new data scraped
+    for item in new_df.to_dict(orient="records"):
+        db.upsert(item, Query().plagename == item["plagename"])
 
-    # write to google sheets
-    df = df.fillna("")
-    write_to_google_sheets(df, "plagesquebec")
+    # Get the beaches without the remote content or image
+    Beach = Query()
+    missing_content_beahces = db.search(
+        ~(Beach.remotecontent.exists())
+        | ~(Beach.image.exists())
+        | (Beach.remotecontent == "")
+        | (Beach.image == "")
+    )
+    print("Found ", len(missing_content_beahces), " beaches without link or image")
+
+    # Get the remote content and image for the missing content beaches
+    for beach in missing_content_beahces:
+        print("Processing new beach: ", beach["plagename"])
+        searchstring = (
+            f"{beach['plagename']} {beach['plandeau']} {beach['municipalite']}"
+        )
+        # Get the link & update db
+        result = get_url_about_beach(searchstring)
+        if result:
+            db.update(
+                {"remotecontent": result["href"]}, Beach.plagename == beach["plagename"]
+            )
+        # Get the picture & update db
+        result = get_image_about_beach(searchstring)
+        if result:
+            db.update({"image": result["image"]}, Beach.plagename == beach["plagename"])
 
 
 if __name__ == "__main__":
