@@ -1,0 +1,14 @@
+[project]
+name = "plage-qc-python"
+version = "0.1.0"
+description = "Python script to scrape data about the wate quality of beaches in Quebec"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bs4>=0.0.2",
+    "duckduckgo-search>=7.5.3",
+    "lxml>=5.3.1",
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+    "tinydb>=4.8.2",
+]

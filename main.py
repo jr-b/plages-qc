@@ -23,8 +23,10 @@ def get_regions_ids(
         return [("01", "Bas-Saint-Laurent")]
 
     response = requests.get(url)
+
     if not response.ok:
         response.raise_for_status()
+
     try:
         soup = BeautifulSoup(response.content, "html.parser")
         regions = soup.find("div", {"class": "bte-liste-region"}).find_all(
@@ -33,6 +35,7 @@ def get_regions_ids(
         # make list of tuple with (id, name)
         regions_ids = [(a["href"][-2:], a.text) for a in regions]
         return regions_ids
+
     except Exception as e:
         print(f"Error: {e}")
         return []
@@ -43,24 +46,30 @@ def build_beach_table(url: str, get_external_data_flag: bool = False) -> pd.Data
     Get the table from the url, assuming we want the first table from the webpage
     Then add the remote content and image from DuckDuckGo
     """
+
     header = ["municipalite", "plagename", "plandeau", "cote", "dernierprelevement"]
     tables = pd.read_html(url, skiprows=[0])
+
     if len(tables) == 0:
         raise ValueError("No table found")
+
     tables[0].columns = header
 
     # get external data
     if get_external_data_flag:
         count = len(tables[0])
+
         for i, row in tables[0].iterrows():
             print("Processing ", i, " of ", count)
             searchstring = f"{row['plagename']} {row['plandeau']} {row['municipalite']}"
             # Get the url of the first result
             result = get_url_about_beach(searchstring)
+
             if result:
                 tables[0].loc[i, "remotecontent"] = result["href"]
             # Get the image of the first result
             result = get_image_about_beach(searchstring)
+
             if result:
                 tables[0].loc[i, "image"] = result["image"]
 
@@ -72,6 +81,7 @@ def get_url_about_beach(searchstring: str) -> dict[str, str]:
     Query DuckDuckGo for the first result about the beach
     Returns a dictionary with the url of the first result, the title of the page and its description
     """
+
     try:
         with DDGS(proxy="socks5://127.0.0.1:9150", timeout=10) as ddgs:
             response = ddgs.text(
@@ -82,6 +92,7 @@ def get_url_about_beach(searchstring: str) -> dict[str, str]:
                 backend="lite",
             )
             return response[0]
+
     except Exception as e:
         print(f"Error getting url: {e}")
         return {}
@@ -91,7 +102,9 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
     """
     Query DuckDuckGo for the first image about the beach
     """
+
     try:
+        # We use tor to scrape external data (see gh workflow scrape.yml)
         with DDGS(proxy="socks5://127.0.0.1:9150", timeout=10) as ddgs:
             for r in ddgs.images(
                 searchstring,
@@ -108,8 +121,10 @@ def get_image_about_beach(searchstring: str) -> dict[str, str]:
                     == 200
                 ):
                     return r
+
                 else:
                     print("Image not found" + r["image"])
+
     except Exception as e:
         print(f"Error getting image: {e}")
         return {}
@@ -119,9 +134,12 @@ def scrape_data() -> list[pd.DataFrame]:
     """
     Scrape the table for each region and return a list of all the tables
     """
+
     alltables = []
+
     for region in get_regions_ids():
         url = f"https://www.environnement.gouv.qc.ca/programmes/env-plage/liste_plage.asp?region={region[0]}"
+
         try:
             print("Processing region: ", region[1])
             table = build_beach_table(url)
@@ -129,9 +147,11 @@ def scrape_data() -> list[pd.DataFrame]:
             table["regionid"] = region[0]
             table["regionname"] = region[1]
             alltables.append(table)
+
         except ValueError:
             print("No table found for region: ", region[1])
             continue
+
     return alltables
 
 
