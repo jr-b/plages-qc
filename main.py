@@ -4,7 +4,6 @@ import pandas as pd
 from duckduckgo_search import DDGS
 import os
 from tinydb import TinyDB, Query
-from sheets import write_to_google_sheets
 
 """
 Script pour récupérer les données concernant la qualité de l'eau des plages du Québec à partir du Programme Environnement-Plage
